@@ -1,0 +1,27 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run C++",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "g++ -std=c++17 -O2 '${file}' -o '${workspaceFolder}/program' && '${workspaceFolder}/program' < '${workspaceFolder}/io/input.txt' > '${workspaceFolder}/io/output.txt'"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "echo": false,
+                "reveal": "never",
+                "focus": false,
+                "panel": "shared",
+                "clear": false
+            }
+        }
+    ]
+}
